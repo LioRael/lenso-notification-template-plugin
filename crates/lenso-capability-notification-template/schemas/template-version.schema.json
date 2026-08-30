@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "version", "locale", "revision", "subject_template", "text_template", "html_template", "required_variables", "renderer_identity", "template_digest", "created_by", "created_at", "active", "head_revision"],
+  "properties": {
+    "template_id": {"type":"string"},
+    "version": {"type":"string"},
+    "locale": {"type":"string"},
+    "revision": {"type":"string","pattern":"^[1-9][0-9]*$"},
+    "subject_template": {"type":"string"},
+    "text_template": {"type":"string"},
+    "html_template": {"type":"string"},
+    "required_variables": {"type":"array","items":{"type":"string"}},
+    "renderer_identity": {"type":"string"},
+    "template_digest": {"type":"string"},
+    "created_by": {"type":"string"},
+    "created_at": {"type":"string","format":"date-time"},
+    "active": {"type":"boolean"},
+    "head_revision": {"type":["string","null"],"pattern":"^[1-9][0-9]*$"}
+  },
+  "additionalProperties": false
+}

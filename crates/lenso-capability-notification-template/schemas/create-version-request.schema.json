@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "version", "locale", "subject_template", "text_template", "html_template", "idempotency_key"],
+  "properties": {
+    "template_id": {"type":"string","minLength":1,"maxLength":160},
+    "version": {"type":"string","minLength":1,"maxLength":80},
+    "locale": {"type":"string","minLength":2,"maxLength":32},
+    "subject_template": {"type":"string","minLength":1,"maxLength":998},
+    "text_template": {"type":"string","minLength":1,"maxLength":131072},
+    "html_template": {"type":"string","minLength":1,"maxLength":262144},
+    "idempotency_key": {"type":"string","minLength":1,"maxLength":240}
+  },
+  "additionalProperties": false
+}

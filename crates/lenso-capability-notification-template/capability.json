@@ -1,0 +1,14 @@
+{
+  "id": "lenso.notification-template@1",
+  "version": "1.0.0",
+  "portable": true,
+  "cross_lane_transfer": true,
+  "operations": [
+    {"name":"create_version","interaction":"request","request_schema":"schemas/create-version-request.schema.json","response_schema":"schemas/create-version-response.schema.json","domain_error_schema":"schemas/template-error.schema.json"},
+    {"name":"activate_version","interaction":"request","request_schema":"schemas/activate-version-request.schema.json","response_schema":"schemas/activate-version-response.schema.json","domain_error_schema":"schemas/template-error.schema.json"},
+    {"name":"get_version","interaction":"request","request_schema":"schemas/get-version-request.schema.json","response_schema":"schemas/template-version.schema.json","domain_error_schema":"schemas/template-error.schema.json"},
+    {"name":"list_versions","interaction":"request","request_schema":"schemas/list-versions-request.schema.json","response_schema":"schemas/list-versions-response.schema.json","domain_error_schema":"schemas/template-error.schema.json"},
+    {"name":"render","interaction":"request","request_schema":"schemas/render-request.schema.json","response_schema":"schemas/render-response.schema.json","domain_error_schema":"schemas/template-error.schema.json"},
+    {"name":"preview","interaction":"request","request_schema":"schemas/preview-request.schema.json","response_schema":"schemas/render-response.schema.json","domain_error_schema":"schemas/template-error.schema.json"}
+  ]
+}

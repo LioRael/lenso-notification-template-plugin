@@ -1,0 +1,42 @@
+[package]
+name = "lenso-notification-template-postgres-plugin"
+version = "0.1.0"
+description = "PostgreSQL-backed versioned notification template Plugin for Lenso."
+edition.workspace = true
+license.workspace = true
+publish = true
+repository.workspace = true
+rust-version.workspace = true
+include = ["configuration.schema.json", "migrations/*.sql", "src/*.rs"]
+
+[package.metadata.lenso]
+plugin-id = "lenso.notification-template.postgres"
+root-slot = "notification_templates"
+
+[features]
+default = []
+postgres-acceptance = []
+
+[dependencies]
+futures.workspace = true
+lenso.workspace = true
+lenso-auth-sdk.workspace = true
+lenso-capability-notification-template = { version = "0.1.0", path = "../lenso-capability-notification-template" }
+lenso-capability-secrets.workspace = true
+lenso-kernel.workspace = true
+lenso-postgres-kit.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+sqlx.workspace = true
+thiserror.workspace = true
+time.workspace = true
+zeroize.workspace = true
+
+[dev-dependencies]
+lenso-native-adapter.workspace = true
+tokio.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
