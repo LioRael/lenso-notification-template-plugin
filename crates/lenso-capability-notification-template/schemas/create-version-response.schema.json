@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "version", "locale", "revision", "required_variables", "renderer_identity", "template_digest", "created_at", "idempotent_replay"],
+  "properties": {
+    "template_id": {"type":"string"},
+    "version": {"type":"string"},
+    "locale": {"type":"string"},
+    "revision": {"type":"string","pattern":"^[1-9][0-9]*$"},
+    "required_variables": {"type":"array","items":{"type":"string"}},
+    "renderer_identity": {"type":"string"},
+    "template_digest": {"type":"string"},
+    "created_at": {"type":"string","format":"date-time"},
+    "idempotent_replay": {"type":"boolean"}
+  },
+  "additionalProperties": false
+}

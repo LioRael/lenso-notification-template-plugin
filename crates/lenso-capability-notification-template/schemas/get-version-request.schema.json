@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "version", "locale"],
+  "properties": {
+    "template_id": {"type":"string","minLength":1,"maxLength":160},
+    "version": {"type":"string","minLength":1,"maxLength":80},
+    "locale": {"type":"string","minLength":2,"maxLength":32}
+  },
+  "additionalProperties": false
+}

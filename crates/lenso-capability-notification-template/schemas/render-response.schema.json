@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["template_id", "version", "requested_locale", "resolved_locale", "fallback_used", "renderer_identity", "template_digest", "content_digest", "subject", "text", "html"],
+  "properties": {
+    "template_id": {"type":"string"},
+    "version": {"type":"string"},
+    "requested_locale": {"type":"string"},
+    "resolved_locale": {"type":"string"},
+    "fallback_used": {"type":"boolean"},
+    "renderer_identity": {"type":"string"},
+    "template_digest": {"type":"string"},
+    "content_digest": {"type":"string"},
+    "subject": {"type":"string"},
+    "text": {"type":"string"},
+    "html": {"type":"string"}
+  },
+  "additionalProperties": false
+}
