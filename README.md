@@ -74,10 +74,10 @@ See `docs/postgresql-operations.md` for backup, restore, and upgrade guidance.
 ## Validation
 
 ```sh
-lenso-cargo fmt --all -- --check
-lenso-cargo check --locked --workspace --all-targets --all-features
-lenso-cargo test --locked --workspace --all-targets
-lenso-cargo clippy --locked --workspace --all-targets --all-features -- -D warnings
+cargo fmt --all -- --check
+cargo check --locked --workspace --all-targets --all-features
+cargo test --locked --workspace --all-targets
+cargo clippy --locked --workspace --all-targets --all-features -- -D warnings
 lenso-contract-codegen workspace check --manifest-path Cargo.toml
 ./scripts/check-public-packages.sh
 ./scripts/check-repository-boundary.sh
