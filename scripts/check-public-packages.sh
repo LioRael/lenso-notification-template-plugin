@@ -14,7 +14,6 @@ for package in lenso-capability-notification-template lenso-notification-templat
 done
 
 required_source_set=(
-  crates/lenso-capability-notification-template/build.rs
   crates/lenso-capability-notification-template/capability.json
   crates/lenso-capability-notification-template/schemas/render-request.schema.json
   crates/lenso-capability-notification-template/src/generated.rs
