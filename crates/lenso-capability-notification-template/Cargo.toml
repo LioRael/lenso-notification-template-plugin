@@ -1,6 +1,6 @@
 [package]
 name = "lenso-capability-notification-template"
-version = "0.1.0"
+version = "0.1.1"
 description = "Portable versioned notification template and rendering Capability for Lenso."
 edition.workspace = true
 license.workspace = true

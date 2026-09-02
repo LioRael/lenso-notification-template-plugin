@@ -1,6 +1,6 @@
 [package]
 name = "lenso-notification-template-postgres-plugin"
-version = "0.1.0"
+version = "0.1.1"
 description = "PostgreSQL-backed versioned notification template Plugin for Lenso."
 edition.workspace = true
 license.workspace = true
@@ -21,7 +21,7 @@ postgres-acceptance = []
 futures.workspace = true
 lenso.workspace = true
 lenso-auth-sdk.workspace = true
-lenso-capability-notification-template = { version = "0.1.0", path = "../lenso-capability-notification-template" }
+lenso-capability-notification-template = { version = "0.1.1", path = "../lenso-capability-notification-template" }
 lenso-capability-secrets.workspace = true
 lenso-kernel.workspace = true
 lenso-postgres-kit.workspace = true

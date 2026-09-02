@@ -787,7 +787,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-capability-notification-template"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso-contract-runtime",
@@ -899,7 +899,7 @@ dependencies = [
 
 [[package]]
 name = "lenso-notification-template-postgres-plugin"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "futures",
  "lenso",
